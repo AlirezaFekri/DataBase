@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="fa-persian" dir="rtl">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="./../assets/css/style.css" />
+		<link rel="stylesheet" href="./../assets/css/table.css" />
+		<link rel="stylesheet" href="./../assets/css/modal.css" />
+		<title>نمایش محصولات</title>
+	</head>
+	<body>
+		<header>
+			<h1>فروشگاه گرون فروش</h1>
+		</header>
+		<div class="body">
+			<button class="btn-add show-modal">افزودن محصول جدید</button>
+			<table>
+				<thead>
+					<tr>
+						<th class="img"></th>
+						<th>نام</th>
+						<th>قیمت خرید</th>
+						<th>قیمت مصرف کننده</th>
+						<th>قیمت فروشگاه</th>
+						<th>موجودی</th>
+						<th>تاریخ اضافه شدن</th>
+						<th>عملیات</th>
+					</tr>
+				</thead>
+				<tbody class="show-product__table"></tbody>
+			</table>
+		</div>
+		<div class="modal">
+			<div class="modal-content">
+
+					<div class="item-attr">
+						<label for="name">نام محصول</label>
+						<input class="txt-input" id="name" type="text" />
+					</div>
+
+					<div class="item-attr">
+						<label for="barcode">بارکد</label>
+						<input class="txt-input" id="barcode" type="number"  inputmode="numeric" />
+					</div>
+
+					<div class="item-attr">
+						<label for="buy_price">قِمت خرید</label>
+						<input class="txt-input" id="buy_price" type="number"  inputmode="numeric" />
+					</div>
+
+					<div class="item-attr">
+						<label for="consumer">فیمت مصرف کننده</label>
+						<input class="txt-input" id="consumer" type="number"  inputmode="numeric"/>
+					</div>
+
+					<div class="item-attr">
+						<label for="sell">قیمت فروشگاه</label>
+						<input class="txt-input" id="sell" type="number"  inputmode="numeric"/>
+					</div>
+
+					<div class="item-attr">
+						<label for="count">تعداد</label>
+						<input class="txt-input" id="count" type="number"  inputmode="numeric"/>
+					</div>
+
+					<div class="item-attr">
+						<label for="seller">فروشنده</label>
+						<input class="txt-input" id="seller" type="text" />
+					</div>
+
+					<div class="item-attr">
+						<label for="">تصویر</label>
+                        <input class="txt-input" type="file" />
+					</div>
+                    
+                    <div class="item-attr">
+                        <label for="">وضعیت</label>
+                        <select  name="state" id="#">
+                            <option value="Active">فعال</option>
+                            <option value="DeActive">غیر فعال</option>
+                            <option value="OutOfDtock">اتمام موجودی</option>
+                            <option value="StopProduction">توقف تولید</option>
+                            <button class="btn-add">افزودن</button>
+                        </select>
+                    </div>
+                    <div class="item-attr">
+                        <button class="btn-add sub">اقزودن محصول </button>
+                        <button class="btn-add can" type="clear">لغو </button>
+                    </div>
+				
+			</div>
+		</div>
+		<script src="./../assets/js/getProducts.js"></script>
+		<script src="./../assets/js/delProducts.js"></script>
+		<script src="./../assets/js/main.js"></script>
+	</body>
+</html>

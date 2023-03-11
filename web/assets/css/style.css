@@ -1,0 +1,38 @@
+@import url("./fonts.css");
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+header{
+    background-color: rgb(37, 86, 248);
+    display: flex;
+    align-items: center;
+    align-content: center;
+    flex-direction: column;
+    padding: 20px;
+}
+h1{
+    font-family: mr;
+    color: #fff;
+}
+.body{
+    padding:20px;
+}
+.btn-add{
+    background: blueviolet;
+    color: white;
+    padding: 20px;
+    border: none;
+    outline: none;
+    font-family: iran;
+    cursor: pointer;
+    border-radius: 10px;
+}
+.sub{
+    background:  rgb(2, 134, 19) ;
+}
+.can{
+    background:  red ;
+}
+
